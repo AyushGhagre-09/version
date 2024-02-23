@@ -1,14 +1,11 @@
-# Ensure old version of SyntheticAgent is removed
 include:
-  - cpstrepo
-
+- cpstrepo
 remove_old_SyntheticAgent:
   pkg.removed:
-    - name: SyntheticAgent
-
+  - name: SyntheticAgent
 install SyntheticAgent version staging:
   pkg.installed:
-      - name: SyntheticAgent
-      - version: '1.10.2.3'
-      - require:
-        - pkg: remove_old_SyntheticAgent
+  - name: SyntheticAgent
+  - version: 1.2.3.4
+  - require:
+    - pkg: remove_old_SyntheticAgent

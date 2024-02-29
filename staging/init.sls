@@ -1,10 +1,11 @@
-include: [cpstrepo]
+include:
+- cpstrepo
 remove_old_SyntheticAgent:
   pkg.removed:
-  - {name: SyntheticAgent}
+  - name: SyntheticAgent
 install SyntheticAgent version staging:
   pkg.installed:
-  - {name: SyntheticAgent}
-  - {version: 0.0.0.7}
+  - name: SyntheticAgent
+  - version: 0.0.0.6
   - require:
-    - {pkg: remove_old_SyntheticAgent}
+    - pkg: remove_old_SyntheticAgent

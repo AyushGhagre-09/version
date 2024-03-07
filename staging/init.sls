@@ -6,6 +6,6 @@ remove_old_SyntheticAgent:
 install SyntheticAgent version staging:
   pkg.installed:
   - name: SyntheticAgent
-  - version: 1.1.1.1
+  - version: 1.1.0.1
   - require:
     - pkg: remove_old_SyntheticAgent

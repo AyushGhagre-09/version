@@ -2,6 +2,6 @@ node
 {
   stage("print")
   {
-   echo "webhook configuration for jenkins";
+   echo "webhook configuration for jenkins"
   }
 }

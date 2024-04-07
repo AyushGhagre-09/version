@@ -4,4 +4,7 @@ node
   {
    echo "webhook configuration for jenkins"
   }
+  stage("hello")
+  {
+echo "hello"
 }

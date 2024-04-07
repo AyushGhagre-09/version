@@ -6,6 +6,6 @@ node
   }
   stage("hello")
   {
-echo "hello";
+echo "hello"
 }
 }
